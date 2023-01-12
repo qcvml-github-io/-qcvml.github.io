@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>QCVML: Workshop on Quantum Computer Vision and Machine Learning</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="keywords" content="CVPR, 2023, Quantum Compting, Computer Vision, Machine Learning, D-Wave, Workshop, CVPR Workshop">
+        <meta name="description" content="QCVML is the first workshop that focuses on the connections between Quantum Computing and Computer Vision as well as Machine Learning.">
+        <meta name="author" content="Tolga Birdal">
+        <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <meta http-equiv="Cache-control" content="public" max-age="86400">
+
+		<!--== CSS Files ==-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/style.min.css" rel="stylesheet" media="screen">
+		<link href="css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="css/font-awesome.css" rel="stylesheet" media="screen">
+		<link href="css/flexslider.css" rel="stylesheet" media="screen">
+		<link href="css/fancySelect.css" rel="stylesheet" media="screen">
+		<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+		<link href="css/responsive.css" rel="stylesheet" media="screen">
+
+		<!--== Google Fonts ==-->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-98679125-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div id="home"></div>
+		<header id="header" class="header" data-stellar-ratio="0.5">
+
+			<!--== Preloader ==-->
+			<div id="preloader"><div class="preloader"></div></div>
+
+			<!--== Caption ==-->
+			<div class="header-caption" data-stellar-ratio="2">
+				<div class="container">
+					<div class="box">
+						<!--<h2w>Multiview Relationships in 3D Data<br/></h2w><h3w>In Conjunction with CVPR 2023<br/></h3w>-->
+                        <h2w>In Conjunction with CVPR 2023<br/></h2w>
+						<span class="typed"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--== Header Background ==-->
+			<div id="header-background" class="header-background">
+				<ul class="slides">
+                    <li><img src="images/demo/QCVML.png" alt="CVPR Workshop 2023 - QCVML2023"></li>
+                    <!--<li><img src="images/demo/bg-slide-02.jpg" alt="Slide 2"></li>-->
+				</ul>
+			</div>
+
+		</header>
+
+		<div id="navigation-wrap" class="navigation-wrap">
+			<div id="navigation" class="navigation">
+				<div class="container">
+					<nav class="navbar navbar-custom" role="navigation">
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!--== Site Menu ==-->
+						<div class="collapse navbar-collapse" id="menu">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#home">Home</a></li>
+                                <li><a href="#goals">Thema</a></li>
+                                <li><a href="#speakers">Speakers</a></li>
+								<li><a href="#schedule">Schedule</a></li>
+								<li><a href="#faq">FAQ</a></li>
+								<li><a href="#news">News</a></li>
+								<li><a href="#location">Location</a></li>
+							</ul>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="container content">
+
+
+
+			<!--===============================-->
+			<!--== About ======================-->
+			<!--===============================-->
+			<section id="about">
+				<div class="row">
+					<div class="col-sm-12 col-md-2">
+						<div class="section-header text-left">
+                            <img src="images/demo/qcvmllogo.png" alt="CVPR Workshop QCVML 2023">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
+						<p>A quantum computer (QC) is a computing machine which takes advantage of quantum effects such as quantum superposition, entanglement, tunnelling and contextuality to solve problems notoriously difficult (belonging to challenging complexity classes such as NP) for a classical computer. Thanks to the exponentially increasing investment in the technology ($1.7B by 2021 and the global market for QC hardware is expected to exceed $8.3 billion by 2027), quantum computers are gradually moving from the realms of theory towards actual devices. Albeit restricted, experimental realisations of numerous quantum algorithms have demonstrated improved computational performance finally reaching the desired supremacy in recent years. To date, IBM has constructed a device with 65 qubits and D-Wave has constructed a computer based on quantum annealing having >5000 qubits. Quantum computers offer speed-ups on certain specific algorithms including well known examples such as Shor’s algorithm, the quantum fourier transform (QFT), and, in the case of quantum annealing, solving non-convex, quadratic unconstrained binary optimization (QUBO) problems. This makes them amenable for deployment in the context of machine learning and computer vision, which demand significant amounts of compute resources. For example, visual perception algorithms need to process millions of pixels, or modern deep learning frameworks have millions of parameters to optimise for. The application of quantum computation to computer vision and machine learning is very interesting and intriguing because of both speed-up benefits and global optimality guarantees it offers.
+The aforementioned premises of quantum computing and annealing has led to the popularisation of quantum computer vision (QCV), where researchers started to port existing computer vision problems into forms amenable to quantum computation. However, reframing the existing problems in the context of this new computing paradigm is not trivial. For instance, existing literature relaxes most of the (discrete) combinatorial search problems to continuous ones, whereas quantum annealing is great at optimisation on discrete binary variables. Hence, oftentimes we are required to revise the problem formulations at hand altogether. The silver lining of this seemingly bad news is the novel research directions it opens up. In the past few years, we have started to witness the development of the first archetypes of this new area. Modern quantum computation has penetrated the realm of computer vision and machine learning in various subjects of study from point cloud registration to multi-object tracking with well supported industry grade development platforms such as D-Wave Ocean, Tensorflow Quantum, IBM Qiskit and Amazon Braket.
+We are optimistic that the quantum revolution is around the corner and the time has come. However, are we, as a community, prepared for this disruption? Our proposed workshop, QCVML (Quantum Computer Vision and Machine Learning) will be dedicated to investigating computer vision and machine learning problems, theoretically and experimentally, through the lens of practical quantum computation. Our main objective is to gather together industry experts, academic researchers, and CV-practitioners of quantum computing into a lively environment for discussing methodologies and challenges raised in exploiting these new types of computing devices; as a targeted topic venue, this workshop will offer participants a unique opportunity to network with a diverse but focused research community. 
+</p>
+					</div>
+					<div class="col-xs-6 col-md-2">
+						<div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+							<b class="accent">8</b>
+							Speakers
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-2">
+						<div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.8s">
+							<b class="accent">1</b>
+							Day
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="goals">
+				<div class="row">
+                    <div class="col-sm-12 col-md-2">
+						<div class="section-header text-left">
+							<h2><b>Goals &amp; Themes</b></h2>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
+						The goal of this workshop is to introduce quantum computation to the realm of computer vision and foster the formation of a community. A concrete summary of the aims are as follows:
+                        <ul style="list-style-type:none; text-align:left;">
+                        <li> Identify computer vision problems that can be addressed by quantum computers</li>
+                        <li> Showcase recent and ongoing progress towards practical quantum computing and computer vision</li>
+                        <li> Address and discuss the current state-of-the art, limitations therein, expected progress and its impact on the computer vision world</li>
+                        <li> Enlighten the community to attract further researchers in this direction</li>
+						</ul>
+                        Focal points for discussions and talks include but are not limited to:
+                        <ul style="list-style-type:none; text-align:left;">
+                            <li> Premises of  quantum computation</li>
+                            <li> Use of the techniques from quantum mechanics in solving CVML problems, classically</li>
+                            <li> Adiabatic quantum computation and use cases in CVML</li>
+                            <li> Circuit based quantum computers and their use in CVML</li>
+                            <li> Tensor methods in QCVML</li>
+                            <li> Review of the upcoming software for programming QC</li>
+						</ul>
+					</div>
+                </div>
+			</section>
+			<!--==========-->
+        
+       <!--  <section id="callforpapers">
+				<div class="row">
+                    <div class="col-sm-12 col-md-2">
+						<div class="section-header text-left">
+							<h2><b>Awards</b></h2>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                        <ul style="list-style-type:none">
+                            <div class="divTable">
+                            <div class="divTableBody">
+                            <div class="divTableRow">
+                            <div class="divTableCell"><h4table>Paper Submission: </h4table></div>
+                            <div class="divTableCell"><h4table><lti><b>July 24, 2023</b></lti> </h4table></div>
+                            </div>
+                            <div class="divTableRow">
+                            <div class="divTableCell"><h4table>Notification of acceptance </h4table></div>
+                            <div class="divTableCell"><h4table><lti><b>August 18, 2023</b></lti> </h4table></div>
+                            </div>
+                            <div class="divTableRow">
+                            <div class="divTableCell"><h4table>Workshop Date</h4table></div>
+                            <div class="divTableCell"><h4table><lti><b>October 28, 2023</b></lti> </h4table></div>
+                            </div>
+                            </div>
+                            </div>
+</ul>
+                        <div class="row">
+					<div class="col-sm-12">
+                            <p>* With these days, we hope to allow a sufficient time slot for re-submission of the unlucky CVPR papers.</p>
+                            </div>
+                            </div>
+					</div>
+                </div>
+			</section>-->
+
+			<!--===============================-->
+			<!--== Speakers ===================-->
+			<!--===============================-->
+			<section id="speakers" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Our <b>speakers</b></h2>
+							<p>Our invited speakers come from top research institutions and companies around the globe, and are leading figures in the topics covered by the workshop. This diverse selection will prove valuable for academic as well as industry researchers and practitioners. Both practical and theoretical aspects of quantum computing and its use in computer vision will be covered by the invited lecturers. We will make a selection out of the confirmed speakers, with a potential to include unconfirmed speakers. Both of these are listed below.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/demo/speakers/max-welling.jpg" alt="Alex Bronstein">
+							<div class="speaker-info">
+								<h3>Max<br> <b>Welling</b></h3>
+								<p>Professor<br>University of Amsterdam</p>
+							</div>
+							<ul class="speaker-contacts">
+                                <li><a target="_blank" href="https://staff.fnwi.uva.nl/m.welling/" class="fa fa-home"></a></li>
+								<li><a target="_blank" href="https://www.linkedin.com/in/max-welling-4a783910" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+                    <div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/demo/speakers/max-welling.jpg" alt="Alex Bronstein">
+							<div class="speaker-info">
+								<h3>Max<br> <b>Welling</b></h3>
+								<p>Professor<br>University of Amsterdam</p>
+							</div>
+							<ul class="speaker-contacts">
+                                <li><a target="_blank" href="https://staff.fnwi.uva.nl/m.welling/" class="fa fa-home"></a></li>
+								<li><a target="_blank" href="https://www.linkedin.com/in/max-welling-4a783910" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
+        
+			<!--===============================-->
+			<!--== Schedule ===================-->
+			<!--===============================-->
+			<section id="schedule" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>The <b>schedule</b></h2>
+							<p>We have a packed and exciting day ahead of us!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
+
+            <section id="organizers" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2><b>Organizers</b></h2>
+							<p>Here are the diligent people behind QCVML 2023.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/demo/organizers/tolga-birdal2.jpg" alt="Tolga Birdal">
+							<div class="speaker-info">
+								<h3><b>Tolga</b><br> Birdal</h3>
+								<p>Asst. Prof.<br> Imperial College London</p>
+							</div>
+							<ul class="speaker-contacts">
+								<li><a target="_blank" href="http://tolgabirdal.github.io" class="fa fa-home"></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/tbirdal/" class="fa fa-linkedin"></a></li>
+                                <li><a target="_blank" href="https://twitter.com/tolga_birdal" class="fa fa-twitter"></a></li>
+							</ul>
+						</div>
+					</div>
+                    <div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/demo/organizers/tolga-birdal2.jpg" alt="Tolga Birdal">
+							<div class="speaker-info">
+								<h3><b>Tolga</b><br> Birdal</h3>
+								<p>Asst. Prof.<br> Imperial College London</p>
+							</div>
+							<ul class="speaker-contacts">
+								<li><a target="_blank" href="http://tolgabirdal.github.io" class="fa fa-home"></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/tbirdal/" class="fa fa-linkedin"></a></li>
+                                <li><a target="_blank" href="https://twitter.com/tolga_birdal" class="fa fa-twitter"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
+			
+			
+			<!--===============================-->
+			<!--== FAQ & Testimonials =========-->
+			<!--===============================-->
+			<section id="faq" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-header text-left">
+							<h2><b>FAQ</b></h2>
+							<!--<p>Awesome section description goes here.</p>-->
+						</div>
+						<ul class="accordion">
+							<li>
+								<a class="accordion-heading">
+									<h4 class="accordion-title">Why arrange a Quantum Computer Vision workshop now?</h4>
+								</a>
+								<div class="accordion-body">
+									<p>
+										.
+									</p>
+								</div>
+							</li>
+							<li>
+								<a class="accordion-heading">
+									<h4 class="accordion-title">Does QCVML accept paper submissions?</h4>
+								</a>
+								<div class="accordion-body">
+									<p>
+										No. Quantum computer vision is a very new area and we are hoping to solicit papers in the next versions of this workshop.</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<a class="accordion-heading">
+									<h4 class="accordion-title">Why should I attend now?</h4>
+								</a>
+								<div class="accordion-body">
+									<p>
+										.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
+
+
+
+			<!--===============================-->
+			<!--== News =======================-->
+			<!--===============================-->
+			
+<section id="news" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-header text-left">
+							<h2>Latest <b>news</b></h2>
+							<p>Follow the recent hapennings here.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="news-list">
+							<li class="news">
+								<span class="news-date">Jan 12</span>
+								<a href=""><h4>QCVML is up and running!</h4></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<!--===============================-->
+			<!--== Location ===================-->
+			<!--===============================-->
+			<section id="location" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12 col-md-7">
+						<div class="map fit-left">
+							<div id="map-canvas"></div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-5">
+						<h2>QCVML 2023 <b>Venue</b></h2>
+						<ul class="contact">
+							<li class="contact-info">
+								<em class="fa fa-map-marker"></em>
+								<span>1055 Canada Pl, Vancouver, BC V6C 0C3, Canada</span>
+							</li>
+							<li class="contact-info">
+								<em class="fa fa-envelope"></em>
+								<span>E-mail : tbirdal@imperial.ac.uk</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
+ 
+
+			<!--===============================-->
+			<!--== Subscribe & Register =======-->
+			<!--===============================-->
+<!--
+			<section id="register" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="section-header text-left">
+							<h2><b>Subscribe</b></h2>
+							<p>Awesome section description goes here.</p>
+						</div>
+						<form id="subscribe-form" method="post" class="form">
+							<input name="name" id="sname" type="text" placeholder="Name" required>
+							<input name="email" id="smail" type="email" placeholder="Email" required>
+							<button type="submit" name="submit" class="button button-active">Subscribe</button>
+						</form>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="section-header text-left">
+							<h2><b>Register</b></h2>
+							<p>Awesome section description goes here.</p>
+						</div>
+						<form id="register-form" method="post" class="form">
+							<input name="name" id="name" type="text" placeholder="Name" required>
+							<input name="email" id="email" type="email" placeholder="Email" required>
+							<input name="telephone" id="telephone" type="tel" placeholder="Telephone">
+							<select name="ticket" id="ticket">
+								<option value="Silver">Silver</option>
+								<option value="Gold">Gold</option>
+								<option value="Platinum">Platinum</option>
+							</select>
+							<button type="submit" name="submit" class="button button-active">Register</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!--==========-->
+
+
+
+			<!--===============================-->
+			<!--== Footer =====================-->
+			<!--===============================-->
+			<footer id="footer" class="footer">
+				<div class="row">
+					<div class="col-sm-8">
+
+						<!--== Social Icons ==-->
+						<!--<ul class="social-icons">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-youtube"></a></li>
+							<li><a href="#" class="fa fa-linkedin"></a></li>
+						</ul>
+-->
+					</div>
+					<div class="col-sm-4 text-right">
+						<div class="copyrights">All Rights Reserved. © 2023 </div>
+					</div>
+				</div>
+			</footer>
+			<!--==========-->
+
+		</div>
+-->
+
+		<!--== Javascript Files ==-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_2muaLDbTKdh_ou9fkj8VjaWrFNgVBt0"></script>
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script src="js/jquery.stellar.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/jquery.accordion.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/fancySelect.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/gmap3.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>
