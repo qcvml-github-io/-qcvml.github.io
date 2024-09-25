@@ -834,7 +834,7 @@ Speakers
 --------------------*/
 .speaker {
 	position: relative;
-	max-width: 280px;
+	max-width: 240px;
 	overflow: hidden;
 	margin: 0 auto 3rem auto;
 	z-index: 15;
@@ -925,6 +925,18 @@ Speakers
 
 .speaker.active .speaker-info { margin-bottom: 50px; margin-top: -50px; }
 .speaker.active .speaker-contacts { bottom: 0; }
+
+/* Ensure at least 2 items move to the next line */
+.speaker-item:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .speaker-item {
+        margin-bottom: 30px; /* Adds space between items on smaller screens */
+    }
+}
+
 
 
 
